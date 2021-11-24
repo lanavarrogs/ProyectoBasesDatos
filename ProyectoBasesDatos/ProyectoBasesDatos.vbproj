@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comprar.Designer.vb">
+      <DependentUpon>Comprar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comprar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprarProducto.Designer.vb">
+      <DependentUpon>ComprarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ComprarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -80,10 +92,24 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -95,6 +121,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Productos.Designer.vb">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetProducto.Designer.vb">
+      <DependentUpon>SetProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="tiendaRopaDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -102,14 +140,32 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Comprar.resx">
+      <DependentUpon>Comprar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprarProducto.resx">
+      <DependentUpon>ComprarProducto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetProducto.resx">
+      <DependentUpon>SetProducto.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +190,42 @@
     <None Include="tiendaRopaDataSet.xss">
       <DependentUpon>tiendaRopaDataSet.xsd</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gorra_hombre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pants_deportivo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pants_deportivo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patns_deportivo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Playera_V1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Playera_V2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Playera_V3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SudaderaAzul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SudaderaNegra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SudaderaRosa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gorra_hombre1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
