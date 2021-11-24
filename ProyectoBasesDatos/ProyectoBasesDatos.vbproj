@@ -85,6 +85,12 @@
     <Compile Include="ComprarProducto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Contactanos.Designer.vb">
+      <DependentUpon>Contactanos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contactanos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -92,10 +98,28 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="Mision.Designer.vb">
+      <DependentUpon>Mision.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="Mision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QS.Designer.vb">
+      <DependentUpon>QS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Valores.Designer.vb">
+      <DependentUpon>Valores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Valores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vision.Designer.vb">
+      <DependentUpon>Vision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vision.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inicio.Designer.vb">
@@ -152,11 +176,23 @@
     <EmbeddedResource Include="ComprarProducto.resx">
       <DependentUpon>ComprarProducto.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Contactanos.resx">
+      <DependentUpon>Contactanos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="Mision.resx">
+      <DependentUpon>Mision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QS.resx">
+      <DependentUpon>QS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valores.resx">
+      <DependentUpon>Valores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vision.resx">
+      <DependentUpon>Vision.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
