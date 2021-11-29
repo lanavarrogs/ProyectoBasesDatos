@@ -161,7 +161,7 @@ Partial Class Comprar
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(477, 453)
+        Me.Button1.Location = New System.Drawing.Point(482, 464)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(556, 80)
         Me.Button1.TabIndex = 13
@@ -174,7 +174,7 @@ Partial Class Comprar
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(477, 344)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(166, 31)
+        Me.Label7.Size = New System.Drawing.Size(133, 25)
         Me.Label7.TabIndex = 15
         Me.Label7.Text = "Fecha Pedido"
         '
