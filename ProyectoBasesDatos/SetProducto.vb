@@ -57,8 +57,8 @@ Public Class SetProducto
 
     End Sub
 
-    Private Sub ProductosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductosToolStripMenuItem.Click
+    Private Sub MenuiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuiToolStripMenuItem.Click
+        Menu_Principal.Show()
         Me.Hide()
-        Productos.Show()
     End Sub
 End Class

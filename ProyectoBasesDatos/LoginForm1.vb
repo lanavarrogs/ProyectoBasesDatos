@@ -38,4 +38,7 @@ Public Class LoginForm1
         PasswordTextBox.Text = ""
     End Sub
 
+    Private Sub LoginForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

@@ -35,4 +35,9 @@ Public Class ComprarProducto
             PictureBox1.Image = My.Resources.gorra_hombre
         End If
     End Sub
+
+    Private Sub MenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuToolStripMenuItem.Click
+        Menu_Principal.Show()
+        Me.Hide()
+    End Sub
 End Class

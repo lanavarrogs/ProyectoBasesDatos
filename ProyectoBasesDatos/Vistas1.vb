@@ -1,8 +1,4 @@
-﻿Public Class Vision
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
-
+﻿Public Class Vistas1
     Private Sub MenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuToolStripMenuItem.Click
         Menu_Principal.Show()
         Me.Hide()

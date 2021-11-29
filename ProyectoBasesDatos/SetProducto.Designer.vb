@@ -49,7 +49,7 @@ Partial Class SetProducto
         Me.GetProductoTableAdapter = New ProyectoBasesDatos.tiendaRopaDataSetTableAdapters.getProductoTableAdapter()
         Me.TableAdapterManager = New ProyectoBasesDatos.tiendaRopaDataSetTableAdapters.TableAdapterManager()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.TiendaRopaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GetProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,7 +72,7 @@ Partial Class SetProducto
         '
         Me.txtIdProducto.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIdProducto.Location = New System.Drawing.Point(21, 68)
-        Me.txtIdProducto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtIdProducto.Margin = New System.Windows.Forms.Padding(2)
         Me.txtIdProducto.Name = "txtIdProducto"
         Me.txtIdProducto.Size = New System.Drawing.Size(184, 29)
         Me.txtIdProducto.TabIndex = 1
@@ -81,7 +81,7 @@ Partial Class SetProducto
         '
         Me.txtNombreProducto.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNombreProducto.Location = New System.Drawing.Point(21, 143)
-        Me.txtNombreProducto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNombreProducto.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombreProducto.Name = "txtNombreProducto"
         Me.txtNombreProducto.Size = New System.Drawing.Size(184, 29)
         Me.txtNombreProducto.TabIndex = 3
@@ -101,7 +101,7 @@ Partial Class SetProducto
         '
         Me.txtGama.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtGama.Location = New System.Drawing.Point(21, 218)
-        Me.txtGama.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtGama.Margin = New System.Windows.Forms.Padding(2)
         Me.txtGama.Name = "txtGama"
         Me.txtGama.Size = New System.Drawing.Size(184, 29)
         Me.txtGama.TabIndex = 5
@@ -121,7 +121,7 @@ Partial Class SetProducto
         '
         Me.txtDimensiones.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDimensiones.Location = New System.Drawing.Point(22, 304)
-        Me.txtDimensiones.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtDimensiones.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDimensiones.Name = "txtDimensiones"
         Me.txtDimensiones.Size = New System.Drawing.Size(184, 29)
         Me.txtDimensiones.TabIndex = 7
@@ -141,7 +141,7 @@ Partial Class SetProducto
         '
         Me.txtProveedor.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtProveedor.Location = New System.Drawing.Point(264, 68)
-        Me.txtProveedor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtProveedor.Margin = New System.Windows.Forms.Padding(2)
         Me.txtProveedor.Name = "txtProveedor"
         Me.txtProveedor.Size = New System.Drawing.Size(184, 29)
         Me.txtProveedor.TabIndex = 9
@@ -161,7 +161,7 @@ Partial Class SetProducto
         '
         Me.txtDescripcion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDescripcion.Location = New System.Drawing.Point(264, 143)
-        Me.txtDescripcion.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtDescripcion.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDescripcion.Name = "txtDescripcion"
         Me.txtDescripcion.Size = New System.Drawing.Size(184, 29)
         Me.txtDescripcion.TabIndex = 11
@@ -181,7 +181,7 @@ Partial Class SetProducto
         '
         Me.txtCantidadStock.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCantidadStock.Location = New System.Drawing.Point(264, 218)
-        Me.txtCantidadStock.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCantidadStock.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCantidadStock.Name = "txtCantidadStock"
         Me.txtCantidadStock.Size = New System.Drawing.Size(184, 29)
         Me.txtCantidadStock.TabIndex = 13
@@ -201,7 +201,7 @@ Partial Class SetProducto
         '
         Me.txtPrecioVenta.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPrecioVenta.Location = New System.Drawing.Point(264, 304)
-        Me.txtPrecioVenta.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPrecioVenta.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPrecioVenta.Name = "txtPrecioVenta"
         Me.txtPrecioVenta.Size = New System.Drawing.Size(184, 29)
         Me.txtPrecioVenta.TabIndex = 15
@@ -221,7 +221,7 @@ Partial Class SetProducto
         '
         Me.txtPrecioProveedor.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPrecioProveedor.Location = New System.Drawing.Point(483, 68)
-        Me.txtPrecioProveedor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPrecioProveedor.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPrecioProveedor.Name = "txtPrecioProveedor"
         Me.txtPrecioProveedor.Size = New System.Drawing.Size(184, 29)
         Me.txtPrecioProveedor.TabIndex = 17
@@ -241,7 +241,7 @@ Partial Class SetProducto
         '
         Me.txtCodigoVenta.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCodigoVenta.Location = New System.Drawing.Point(483, 143)
-        Me.txtCodigoVenta.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCodigoVenta.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCodigoVenta.Name = "txtCodigoVenta"
         Me.txtCodigoVenta.Size = New System.Drawing.Size(184, 29)
         Me.txtCodigoVenta.TabIndex = 19
@@ -261,7 +261,7 @@ Partial Class SetProducto
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(251, 380)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(288, 64)
         Me.Button1.TabIndex = 20
@@ -298,7 +298,7 @@ Partial Class SetProducto
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuiToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
@@ -306,17 +306,17 @@ Partial Class SetProducto
         Me.MenuStrip1.TabIndex = 21
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'ProductosToolStripMenuItem
+        'MenuiToolStripMenuItem
         '
-        Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
-        Me.ProductosToolStripMenuItem.Text = "Productos"
+        Me.MenuiToolStripMenuItem.Name = "MenuiToolStripMenuItem"
+        Me.MenuiToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
+        Me.MenuiToolStripMenuItem.Text = "Menu"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ProyectoBasesDatos.My.Resources.Resources.sidebar
         Me.PictureBox1.Location = New System.Drawing.Point(720, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(314, 458)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -352,7 +352,7 @@ Partial Class SetProducto
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "SetProducto"
         Me.Text = "Dimensiones"
         CType(Me.TiendaRopaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -391,6 +391,6 @@ Partial Class SetProducto
     Friend WithEvents GetProductoTableAdapter As tiendaRopaDataSetTableAdapters.getProductoTableAdapter
     Friend WithEvents TableAdapterManager As tiendaRopaDataSetTableAdapters.TableAdapterManager
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents ProductosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents MenuiToolStripMenuItem As ToolStripMenuItem
 End Class

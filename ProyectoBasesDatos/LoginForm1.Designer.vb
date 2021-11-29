@@ -43,9 +43,10 @@ Partial Class LoginForm1
         Me.UsernameLabel.BackColor = System.Drawing.Color.Transparent
         Me.UsernameLabel.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UsernameLabel.ForeColor = System.Drawing.Color.Maroon
-        Me.UsernameLabel.Location = New System.Drawing.Point(236, 120)
+        Me.UsernameLabel.Location = New System.Drawing.Point(177, 98)
+        Me.UsernameLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.UsernameLabel.Name = "UsernameLabel"
-        Me.UsernameLabel.Size = New System.Drawing.Size(534, 43)
+        Me.UsernameLabel.Size = New System.Drawing.Size(400, 35)
         Me.UsernameLabel.TabIndex = 0
         Me.UsernameLabel.Text = "&Nombre de usuario"
         Me.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -55,9 +56,10 @@ Partial Class LoginForm1
         Me.PasswordLabel.BackColor = System.Drawing.Color.Transparent
         Me.PasswordLabel.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PasswordLabel.ForeColor = System.Drawing.Color.Maroon
-        Me.PasswordLabel.Location = New System.Drawing.Point(236, 199)
+        Me.PasswordLabel.Location = New System.Drawing.Point(177, 162)
+        Me.PasswordLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.PasswordLabel.Name = "PasswordLabel"
-        Me.PasswordLabel.Size = New System.Drawing.Size(528, 55)
+        Me.PasswordLabel.Size = New System.Drawing.Size(396, 45)
         Me.PasswordLabel.TabIndex = 2
         Me.PasswordLabel.Text = "&Contraseña"
         Me.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -65,26 +67,29 @@ Partial Class LoginForm1
         'UsernameTextBox
         '
         Me.UsernameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UsernameTextBox.Location = New System.Drawing.Point(236, 166)
+        Me.UsernameTextBox.Location = New System.Drawing.Point(177, 135)
+        Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.UsernameTextBox.Name = "UsernameTextBox"
-        Me.UsernameTextBox.Size = New System.Drawing.Size(528, 30)
+        Me.UsernameTextBox.Size = New System.Drawing.Size(397, 26)
         Me.UsernameTextBox.TabIndex = 1
         '
         'PasswordTextBox
         '
         Me.PasswordTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PasswordTextBox.Location = New System.Drawing.Point(236, 257)
+        Me.PasswordTextBox.Location = New System.Drawing.Point(177, 209)
+        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PasswordTextBox.Size = New System.Drawing.Size(531, 34)
+        Me.PasswordTextBox.Size = New System.Drawing.Size(399, 28)
         Me.PasswordTextBox.TabIndex = 3
         '
         'OK
         '
         Me.OK.BackColor = System.Drawing.Color.White
-        Me.OK.Location = New System.Drawing.Point(253, 439)
+        Me.OK.Location = New System.Drawing.Point(190, 357)
+        Me.OK.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.OK.Name = "OK"
-        Me.OK.Size = New System.Drawing.Size(211, 83)
+        Me.OK.Size = New System.Drawing.Size(158, 67)
         Me.OK.TabIndex = 4
         Me.OK.Text = "&Aceptar"
         Me.OK.UseVisualStyleBackColor = False
@@ -93,9 +98,10 @@ Partial Class LoginForm1
         '
         Me.Cancel.BackColor = System.Drawing.Color.White
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(516, 439)
+        Me.Cancel.Location = New System.Drawing.Point(387, 357)
+        Me.Cancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Cancel.Name = "Cancel"
-        Me.Cancel.Size = New System.Drawing.Size(251, 83)
+        Me.Cancel.Size = New System.Drawing.Size(188, 67)
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancelar"
         Me.Cancel.UseVisualStyleBackColor = False
@@ -103,11 +109,11 @@ Partial Class LoginForm1
         'LoginForm1
         '
         Me.AcceptButton = Me.OK
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.CancelButton = Me.Cancel
-        Me.ClientSize = New System.Drawing.Size(1020, 544)
+        Me.ClientSize = New System.Drawing.Size(765, 442)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.PasswordTextBox)
@@ -115,6 +121,7 @@ Partial Class LoginForm1
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "LoginForm1"

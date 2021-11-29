@@ -98,6 +98,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Principal.Designer.vb">
+      <DependentUpon>Menu_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Mision.Designer.vb">
       <DependentUpon>Mision.vb</DependentUpon>
     </Compile>
@@ -168,6 +180,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>tiendaRopaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Vistas1.Designer.vb">
+      <DependentUpon>Vistas1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas1.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Comprar.resx">
@@ -182,11 +200,15 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal.resx">
+      <DependentUpon>Menu_Principal.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mision.resx">
       <DependentUpon>Mision.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QS.resx">
       <DependentUpon>QS.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Valores.resx">
       <DependentUpon>Valores.vb</DependentUpon>
@@ -211,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SetProducto.resx">
       <DependentUpon>SetProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas1.resx">
+      <DependentUpon>Vistas1.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -271,6 +296,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sidebar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tienda-ropa-efecto-borroso_23-2148164717.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tienda ropa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tienda ropa inicio.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
