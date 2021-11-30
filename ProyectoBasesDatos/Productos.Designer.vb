@@ -43,6 +43,7 @@ Partial Class Productos
         Me.GetProductoBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.AgregarProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductoTableAdapter = New ProyectoBasesDatos.tiendaRopaDataSetTableAdapters.productoTableAdapter()
         Me.ProductoDataGridView = New System.Windows.Forms.DataGridView()
@@ -56,7 +57,7 @@ Partial Class Productos
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EliminarProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.TiendaRopaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GetProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GetProductoBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -124,7 +125,7 @@ Partial Class Productos
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 28)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
@@ -134,7 +135,7 @@ Partial Class Productos
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 28)
         Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
@@ -143,7 +144,7 @@ Partial Class Productos
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 28)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -152,13 +153,13 @@ Partial Class Productos
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 28)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 31)
         '
         'BindingNavigatorPositionItem
         '
@@ -173,7 +174,7 @@ Partial Class Productos
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 31)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -181,7 +182,7 @@ Partial Class Productos
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 28)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -190,13 +191,13 @@ Partial Class Productos
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 28)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 31)
         '
         'GetProductoBindingNavigatorSaveItem
         '
@@ -204,7 +205,7 @@ Partial Class Productos
         Me.GetProductoBindingNavigatorSaveItem.Enabled = False
         Me.GetProductoBindingNavigatorSaveItem.Image = CType(resources.GetObject("GetProductoBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.GetProductoBindingNavigatorSaveItem.Name = "GetProductoBindingNavigatorSaveItem"
-        Me.GetProductoBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
+        Me.GetProductoBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 28)
         Me.GetProductoBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'MenuStrip1
@@ -220,8 +221,14 @@ Partial Class Productos
         'AgregarProductoToolStripMenuItem
         '
         Me.AgregarProductoToolStripMenuItem.Name = "AgregarProductoToolStripMenuItem"
-        Me.AgregarProductoToolStripMenuItem.Size = New System.Drawing.Size(141, 24)
+        Me.AgregarProductoToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
         Me.AgregarProductoToolStripMenuItem.Text = "Agregar Producto"
+        '
+        'EliminarProductoToolStripMenuItem
+        '
+        Me.EliminarProductoToolStripMenuItem.Name = "EliminarProductoToolStripMenuItem"
+        Me.EliminarProductoToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
+        Me.EliminarProductoToolStripMenuItem.Text = "Eliminar Producto"
         '
         'ProductoBindingSource
         '
@@ -325,17 +332,22 @@ Partial Class Productos
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         Me.DataGridViewTextBoxColumn10.Width = 125
         '
-        'EliminarProductoToolStripMenuItem
+        'Button1
         '
-        Me.EliminarProductoToolStripMenuItem.Name = "EliminarProductoToolStripMenuItem"
-        Me.EliminarProductoToolStripMenuItem.Size = New System.Drawing.Size(141, 24)
-        Me.EliminarProductoToolStripMenuItem.Text = "Eliminar Producto"
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(309, 518)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(707, 127)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Actualizar"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1310, 485)
+        Me.ClientSize = New System.Drawing.Size(1310, 691)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ProductoDataGridView)
         Me.Controls.Add(Me.GetProductoBindingNavigator)
         Me.Controls.Add(Me.MenuStrip1)
@@ -389,4 +401,5 @@ Partial Class Productos
     Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
     Friend WithEvents EliminarProductoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Button1 As Button
 End Class

@@ -25,7 +25,6 @@ Partial Class Menu_Principal
         Me.menuTitulo = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContactanosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VisionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MisionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -41,79 +40,74 @@ Partial Class Menu_Principal
         Me.menuTitulo.BackColor = System.Drawing.Color.Transparent
         Me.menuTitulo.Font = New System.Drawing.Font("Segoe UI", 90.0!)
         Me.menuTitulo.ForeColor = System.Drawing.Color.Maroon
-        Me.menuTitulo.Location = New System.Drawing.Point(284, 133)
-        Me.menuTitulo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.menuTitulo.Location = New System.Drawing.Point(379, 164)
         Me.menuTitulo.Name = "menuTitulo"
-        Me.menuTitulo.Size = New System.Drawing.Size(374, 159)
+        Me.menuTitulo.Size = New System.Drawing.Size(467, 199)
         Me.menuTitulo.TabIndex = 12
         Me.menuTitulo.Text = "Menu"
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VentasToolStripMenuItem, Me.CompraToolStripMenuItem, Me.ContactanosToolStripMenuItem, Me.VisionToolStripMenuItem, Me.MisionToolStripMenuItem, Me.ValoresToolStripMenuItem, Me.QuienesSomosToolStripMenuItem, Me.VentasToolStripMenuItem1})
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VentasToolStripMenuItem, Me.ContactanosToolStripMenuItem, Me.VisionToolStripMenuItem, Me.MisionToolStripMenuItem, Me.ValoresToolStripMenuItem, Me.QuienesSomosToolStripMenuItem, Me.VentasToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(936, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1248, 28)
         Me.MenuStrip1.TabIndex = 13
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'VentasToolStripMenuItem
         '
         Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
-        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(66, 24)
         Me.VentasToolStripMenuItem.Text = "Ventas"
-        '
-        'CompraToolStripMenuItem
-        '
-        Me.CompraToolStripMenuItem.Name = "CompraToolStripMenuItem"
-        Me.CompraToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
-        Me.CompraToolStripMenuItem.Text = "Compra"
         '
         'ContactanosToolStripMenuItem
         '
         Me.ContactanosToolStripMenuItem.Name = "ContactanosToolStripMenuItem"
-        Me.ContactanosToolStripMenuItem.Size = New System.Drawing.Size(86, 20)
+        Me.ContactanosToolStripMenuItem.Size = New System.Drawing.Size(105, 24)
         Me.ContactanosToolStripMenuItem.Text = "Contactanos"
         '
         'VisionToolStripMenuItem
         '
         Me.VisionToolStripMenuItem.Name = "VisionToolStripMenuItem"
-        Me.VisionToolStripMenuItem.Size = New System.Drawing.Size(51, 20)
+        Me.VisionToolStripMenuItem.Size = New System.Drawing.Size(63, 24)
         Me.VisionToolStripMenuItem.Text = "Vision"
         '
         'MisionToolStripMenuItem
         '
         Me.MisionToolStripMenuItem.Name = "MisionToolStripMenuItem"
-        Me.MisionToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
+        Me.MisionToolStripMenuItem.Size = New System.Drawing.Size(67, 24)
         Me.MisionToolStripMenuItem.Text = "Mision"
         '
         'ValoresToolStripMenuItem
         '
         Me.ValoresToolStripMenuItem.Name = "ValoresToolStripMenuItem"
-        Me.ValoresToolStripMenuItem.Size = New System.Drawing.Size(56, 20)
+        Me.ValoresToolStripMenuItem.Size = New System.Drawing.Size(71, 24)
         Me.ValoresToolStripMenuItem.Text = "Valores"
         '
         'QuienesSomosToolStripMenuItem
         '
         Me.QuienesSomosToolStripMenuItem.Name = "QuienesSomosToolStripMenuItem"
-        Me.QuienesSomosToolStripMenuItem.Size = New System.Drawing.Size(105, 20)
+        Me.QuienesSomosToolStripMenuItem.Size = New System.Drawing.Size(130, 24)
         Me.QuienesSomosToolStripMenuItem.Text = "Quienes somos?"
         '
         'VentasToolStripMenuItem1
         '
         Me.VentasToolStripMenuItem1.Name = "VentasToolStripMenuItem1"
-        Me.VentasToolStripMenuItem1.Size = New System.Drawing.Size(49, 20)
+        Me.VentasToolStripMenuItem1.Size = New System.Drawing.Size(61, 24)
         Me.VentasToolStripMenuItem1.Text = "Vistas"
         '
         'Menu_Principal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.ProyectoBasesDatos.My.Resources.Resources.tienda_ropa_inicio
-        Me.ClientSize = New System.Drawing.Size(936, 478)
+        Me.ClientSize = New System.Drawing.Size(1248, 588)
         Me.Controls.Add(Me.menuTitulo)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Menu_Principal"
         Me.Text = "Menu"
         Me.MenuStrip1.ResumeLayout(False)
@@ -126,7 +120,6 @@ Partial Class Menu_Principal
     Friend WithEvents menuTitulo As Label
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents VentasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CompraToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ContactanosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents VisionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MisionToolStripMenuItem As ToolStripMenuItem

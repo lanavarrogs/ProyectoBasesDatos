@@ -75,6 +75,6 @@ Public Class EliminarProducto
     End Sub
     Private Sub SetProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SetProductoToolStripMenuItem.Click
         Me.Hide()
-        SetProducto.Show()
+
     End Sub
 End Class

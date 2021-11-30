@@ -1,11 +1,11 @@
 ﻿Public Class Menu_Principal
     Private Sub VentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentasToolStripMenuItem.Click
-        Comprar.Show()
+        ComprarProducto.Show()
         Me.Hide()
     End Sub
 
-    Private Sub CompraToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CompraToolStripMenuItem.Click
-        ComprarProducto.Show()
+    Private Sub CompraToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
         Me.Hide()
     End Sub
 

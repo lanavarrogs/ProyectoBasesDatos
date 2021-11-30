@@ -1,21 +1,5 @@
-﻿Imports System.Data.SqlClient
-Public Class ComprarProducto
-    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub ComprarProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Module1.index = ListBox1.SelectedIndex
-        Me.Hide()
-        Comprar.Show()
-    End Sub
-
-    Private Sub ListBox1_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
+﻿Public Class ComprarProducto
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
         Dim Index As Int32
         Index = ListBox1.SelectedIndex
         If Index = 0 Then
@@ -35,8 +19,14 @@ Public Class ComprarProducto
         End If
     End Sub
 
-    Private Sub MenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuToolStripMenuItem.Click
-        Menu_Principal.Show()
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Module1.index = ListBox1.SelectedIndex
         Me.Hide()
+        Comprar.Show()
+    End Sub
+
+    Private Sub MenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuToolStripMenuItem.Click
+        Me.Hide()
+        Menu_Principal.Show()
     End Sub
 End Class
