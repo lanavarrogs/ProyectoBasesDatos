@@ -53,12 +53,17 @@ Public Class SetProducto
 
     Private Sub SetProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'TiendaRopaDataSet.getProducto' Puede moverla o quitarla según sea necesario.
-        Me.GetProductoTableAdapter.Fill(Me.TiendaRopaDataSet.getProducto)
+
 
     End Sub
 
     Private Sub MenuiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuiToolStripMenuItem.Click
         Menu_Principal.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub EliminarProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarProductoToolStripMenuItem.Click
+        Me.Hide()
+        EliminarProducto.Show()
     End Sub
 End Class

@@ -25,6 +25,9 @@ Public Class LoginForm1
         If username = "administrator" And password = "u1*Dd&FLQNsH" Then
             Me.Hide()
             SetProducto.Show()
+        ElseIf username = "cliente" And password = "password" Then
+            Me.Hide()
+            ComprarProducto.Show()
         Else
             MessageBox.Show("Usuario o contraseña incorrecta")
         End If

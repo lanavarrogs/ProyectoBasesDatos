@@ -5,8 +5,7 @@ Public Class ComprarProducto
     End Sub
 
     Private Sub ComprarProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: esta línea de código carga datos en la tabla 'TiendaRopaDataSet.getProducto' Puede moverla o quitarla según sea necesario.
-        Me.GetProductoTableAdapter.Fill(Me.TiendaRopaDataSet.getProducto)
+
 
     End Sub
 

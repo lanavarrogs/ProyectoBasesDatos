@@ -91,6 +91,12 @@
     <Compile Include="Contactanos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EliminarProducto.Designer.vb">
+      <DependentUpon>EliminarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Contactanos.resx">
       <DependentUpon>Contactanos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarProducto.resx">
+      <DependentUpon>EliminarProducto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
